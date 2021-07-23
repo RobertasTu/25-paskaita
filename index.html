@@ -62,32 +62,21 @@
 
 
             sudetis: function(sk, sk1) {
-
                 if(this.rezimas == true) {
-
                     this.rezultatas = sk + sk1;
-              
                 } else {
                     this.rezultatas = this.a + this.b;
                 }
-
-                
                 return this.rezultatas;
-
             },
-
             sudetisAtmintis: function() {
                 if(this.rezimas == true) {
                     this.rezultatas = sk + sk1;
                 } else {
-
                 this.rezultatas = this.a + this.b;
-
                 return this.rezultatas;
                 }
             },
-
-
             atimtis: function(sk, sk1) {
                 if(this.rezimas == true) {
                     this.rezultatas = sk - sk1;
@@ -142,9 +131,7 @@
                     var sk1 = parseFloat(document.querySelector('#sk1').value);
                     var isvedimoElementas = document.querySelector('#rezultatas')
                     isvedimoElementas.innerHTML = skaiciuotuvas.sudetis(sk, sk1);
-                   
-
-                });
+               });
 
                 document.querySelector('#atimtis').addEventListener('click', function() {
                     var sk = parseFloat(document.querySelector('#sk').value);
